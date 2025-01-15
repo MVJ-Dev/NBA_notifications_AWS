@@ -1,25 +1,20 @@
-🏀 NBA Game Day Notification System 📲
+🏀 NBA Game Day Notifications / Sports Alerts System 📲
+📜 Project Overview
+This project is an alert system that sends real-time NBA game day score notifications to subscribed users via SMS/Email. It leverages Amazon SNS, AWS Lambda, Python, Amazon EventBridge, and NBA APIs to provide sports fans with up-to-date game information. The project demonstrates cloud computing principles and efficient notification mechanisms.
 
-📝 Project Overview
-This project implements a real-time NBA game score alert system that sends updates to users via SMS/Email. The system leverages AWS Lambda, Amazon SNS, EventBridge, Python, and the NBA API to deliver timely game information. It demonstrates cloud architecture and efficient event-driven notification mechanisms.
-
-🌐 Technologies
-Cloud Platform: AWS ☁️
-Core AWS Services: SNS, Lambda, EventBridge
+⚙️ Features
+Fetches live NBA game scores using an external NBA API.
+Sends formatted score updates to subscribers via SMS/Email using Amazon SNS.
+Scheduled automation for regular updates using Amazon EventBridge.
+Designed with security in mind, following the principle of least privilege for IAM roles.
+🔧 Prerequisites
+Free account with subscription and API Key at sportsdata.io.
+Personal AWS account with basic understanding of AWS and Python.
+🌍 Technologies
+Cloud Provider: AWS ☁️
+Core Services: SNS, Lambda, EventBridge
 External API: NBA Game API (SportsData.io) 🏀
 Programming Language: Python 3.x 🐍
 IAM Security:
-Enforced least privilege policies for Lambda, SNS, and EventBridge 🔒
-
-🗂️ Project Structure
-game-day-notifications/
-├── src/
-│   ├── gd_notifications.py          # Main Lambda function code
-├── policies/
-│   ├── gb_sns_policy.json           # SNS publishing permissions
-│   ├── gd_eventbridge_policy.json   # EventBridge to Lambda permissions
-│   └── gd_lambda_policy.json        # Lambda execution role permissions
-├── .gitignore
-└── README.md                        # Project documentation
-
+Least privilege policies for Lambda, SNS, and EventBridge 🔐
 
