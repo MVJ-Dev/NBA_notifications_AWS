@@ -1,20 +1,48 @@
-🏀 NBA Game Day Notifications / Sports Alerts System 📲
-📜 Project Overview
-This project is an alert system that sends real-time NBA game day score notifications to subscribed users via SMS/Email. It leverages Amazon SNS, AWS Lambda, Python, Amazon EventBridge, and NBA APIs to provide sports fans with up-to-date game information. The project demonstrates cloud computing principles and efficient notification mechanisms.
+# 🌧️ 30 Days DevOps Challenge - Weather Dashboard 🚀  
+**Day 1: Building a Weather Data Collection System with AWS S3 & OpenWeather API**
 
-⚙️ Features
-Fetches live NBA game scores using an external NBA API.
-Sends formatted score updates to subscribers via SMS/Email using Amazon SNS.
-Scheduled automation for regular updates using Amazon EventBridge.
-Designed with security in mind, following the principle of least privilege for IAM roles.
-🔧 Prerequisites
-Free account with subscription and API Key at sportsdata.io.
-Personal AWS account with basic understanding of AWS and Python.
-🌍 Technologies
-Cloud Provider: AWS ☁️
-Core Services: SNS, Lambda, EventBridge
-External API: NBA Game API (SportsData.io) 🏀
-Programming Language: Python 3.x 🐍
-IAM Security:
-Least privilege policies for Lambda, SNS, and EventBridge 🔐
+---
 
+## 🌍 Project Overview  
+
+This project is part of the **30 Days DevOps Challenge** and aims to create a **Weather Data Collection System** using cloud technologies. The system fetches live weather data and stores it securely using **AWS S3**.
+
+It integrates:
+- 🌦️ **OpenWeather API** for real-time weather data collection
+- ☁️ **AWS S3** for cloud storage
+- 🛠️ **Infrastructure as Code** using Python
+- 🐍 **Python Development**
+- 📁 **Version Control** with Git
+- 🔒 **Error Handling** and **Environment Management**
+
+---
+
+## 🔑 Key Features  
+
+- 🏙️ Fetches real-time weather data using **OpenWeather API**  
+- 💾 Automatically stores weather data in **AWS S3** for reliable cloud storage  
+- 🌍 Allows tracking of multiple cities with real-time updates  
+- 🔒 Built with **security best practices** using **IAM roles**  
+
+---
+
+## 🛠️ Technologies  
+
+- ☁️ **Cloud Provider**: AWS  
+- 🔑 **Core Services**: SNS, Lambda, EventBridge  
+- 🌍 **External API**: OpenWeather API  
+- 🐍 **Programming Language**: Python 3.x  
+- 🔒 **IAM Security**: Least privilege policies for Lambda, SNS, and EventBridge
+
+---
+
+## 🗂️ Project Structure  
+game-day-notifications/
+├── src/
+│   ├── gd_notifications.py          # Main Lambda function code
+├── policies/
+│   ├── gb_sns_policy.json           # SNS publishing permissions
+│   ├── gd_eventbridge_policy.json   # EventBridge to Lambda permissions
+│   └── gd_lambda_policy.json        # Lambda execution role permissions
+├── .gitignore
+└── README.md                        # Project documentation
