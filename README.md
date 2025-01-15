@@ -1,38 +1,26 @@
-# 🌧️ 30 Days DevOps Challenge - Weather Dashboard 🚀  
-**Day 1: Building a Weather Data Collection System with AWS S3 & OpenWeather API**
-
----
+# 🏀 NBA Game Day Notifications / Sports Alerts System 📲  
 
 ## 🌍 Project Overview  
-
-This project is part of the **30 Days DevOps Challenge** and aims to create a **Weather Data Collection System** using cloud technologies. The system fetches live weather data and stores it securely using **AWS S3**.
-
-It integrates:
-- 🌦️ **OpenWeather API** for real-time weather data collection
-- ☁️ **AWS S3** for cloud storage
-- 🛠️ **Infrastructure as Code** using Python
-- 🐍 **Python Development**
-- 📁 **Version Control** with Git
-- 🔒 **Error Handling** and **Environment Management**
+This project is an alert system that sends real-time NBA game day score notifications to subscribed users via SMS/Email. It leverages **Amazon SNS**, **AWS Lambda**, **Python**, **Amazon EventBridge**, and **NBA APIs** to provide sports fans with up-to-date game information. The system demonstrates cloud computing principles and efficient notification mechanisms. ⚡
 
 ---
 
-## 🔑 Key Features  
+## 🔑 Features  
 
-- 🏙️ Fetches real-time weather data using **OpenWeather API**  
-- 💾 Automatically stores weather data in **AWS S3** for reliable cloud storage  
-- 🌍 Allows tracking of multiple cities with real-time updates  
-- 🔒 Built with **security best practices** using **IAM roles**  
+- 🏀 Fetches live NBA game scores using the **NBA Game API** (SportsData.io).
+- 📲 Sends formatted score updates to subscribers via **SMS**/Email using **Amazon SNS**.
+- ⏰ Scheduled automation for regular updates using **Amazon EventBridge**.
+- 🔒 Designed with security in mind, following the **least privilege** principle for **IAM roles**.
 
 ---
 
-## 🛠️ Technologies  
+## ⚙️ Technologies  
 
-- ☁️ **Cloud Provider**: AWS  
-- 🔑 **Core Services**: SNS, Lambda, EventBridge  
-- 🌍 **External API**: OpenWeather API  
-- 🐍 **Programming Language**: Python 3.x  
-- 🔒 **IAM Security**: Least privilege policies for Lambda, SNS, and EventBridge
+- ☁️ **Cloud Provider**: **AWS**
+- 🔧 **Core Services**: **SNS**, **Lambda**, **EventBridge**
+- 🌐 **External API**: **NBA Game API** (SportsData.io)
+- 🐍 **Programming Language**: **Python 3.x**
+- 🔐 **IAM Security**: Least privilege policies for **Lambda**, **SNS**, and **EventBridge**
 
 ---
 
