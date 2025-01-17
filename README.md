@@ -25,13 +25,15 @@ This project is an alert system that sends real-time NBA game day score notifica
 ---
 
 ## 📂 Project Structure 
+```plaintext
 game-day-notifications/
 ├── src/
-│   ├── gd_notifications.py          # Main Lambda function code
+│   ├── gd_notifications.py  # Main Lambda function code
 ├── policies/
-│   ├── gd_sns_policy.json           # SNS publishing permissions
-│   ├── gd_eventbridge_policy.json   # EventBridge to Lambda permissions
-│   └── gd_lambda_policy.json        # Lambda execution role permissions
+│   ├── gd_sns_policy.json  # SNS publishing permissions
+│   ├── gd_eventbridge_policy.json  # EventBridge to Lambda permissions
+│   └── gd_lambda_policy.json  # Lambda execution role permissions
 ├── .gitignore
-└── README.md                        # Project documentation
+└── README.md  # Project documentation
+
 
