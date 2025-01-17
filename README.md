@@ -56,15 +56,10 @@ git clone: https://github.com/MVJ-Dev/NBA_notifications_AWS
 3. Select a **Protocol**:
    - **For Email** 📧:
      - Choose **Email**.
-     - Enter a valid email address.
    - **For SMS (phone number)** 📱:
      - Choose **SMS**.
-     - Enter a valid phone number in international format (e.g., +1234567890).
+     - Enter a valid phone number.
 4. Click **Create Subscription**.
-5. If you selected **Email**:
-   - Check the inbox of the provided email address.
-   - Confirm the subscription by clicking the confirmation link in the email.
-6. For **SMS**, the subscription will be active immediately.
 
 ### **Create the SNS Publish Policy** 🛡️
 1. Open the **IAM service** in the **AWS Management Console**.
@@ -73,7 +68,7 @@ git clone: https://github.com/MVJ-Dev/NBA_notifications_AWS
 4. Replace **REGION** and **ACCOUNT_ID** with your AWS region and account ID.
 5. Click **Next: Tags** (this step can be skipped).
 6. Click **Next: Review**.
-7. Enter a name for the policy (e.g., **gd_sns_policy**).
+7. Enter a name for the policy.
 8. Review and click **Create Policy**.
 
 ### **Create an IAM Role for Lambda** 🧑‍🔧
@@ -104,7 +99,7 @@ git clone: https://github.com/MVJ-Dev/NBA_notifications_AWS
    - **SNS_TOPIC_ARN**: the ARN of the SNS topic created earlier.
 9. Click **Create Function**.
 
-### **Set Up Automation with EventBridge** ⏰
+### **Configure the EventBridge service** ⏰
 1. Navigate to the **EventBridge service** in the **AWS Management Console**.
 2. Go to **Rules → Create Rule**.
 3. Select **Event Source: Schedule**.
@@ -116,9 +111,3 @@ git clone: https://github.com/MVJ-Dev/NBA_notifications_AWS
 2. Create a **test event** to simulate the function's execution.
 3. Run the function and check **CloudWatch Logs** for errors.
 4. Confirm that **SMS notifications** are successfully delivered to the subscribed users.
-
-### **What We Learned** 🎓
-1. Designing a notification system using **AWS SNS** and **Lambda**.
-2. Implementing **least privilege IAM policies** for security.
-3. Automating tasks with **EventBridge**.
-4. Integrating third-party APIs into cloud workflows.
